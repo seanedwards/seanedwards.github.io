@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>{{page.title}} - The Ides of Code</title>
+		<link rel="stylesheet" href="css/style.css" media="screen" />
+		<link rel="stylesheet" href="css/style.css" media="print" />
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<!--
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-26832023-2']);
+			_gaq.push(['_setDomainName', 'ides-lang.com']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		-->
+	</head>
+	<body>
+		<div id="menu">
+			<script>
+
+			new TWTR.Widget({
+					version: 2,
+					type: 'profile',
+					rpp: 4,
+					interval: 30000,
+					width: 245,
+					height: 300,
+					theme: {
+						shell: {
+						background: '#ffffff',
+						color: '#000000'
+					},
+					tweets: {
+						background: '#ffffff',
+						color: '#000000',
+						links: '#0000ff'
+					}
+				},
+				features: {
+					scrollbar: false,
+					loop: false,
+					live: false,
+					behavior: 'all'
+				}
+			}).render().setUser('total_meltdown').start();
+			</script>
+		</div>
+		
+		<div id="content">
+			<h1>{{page.title}}</h1>
+			{{content}}
+			<div style="text-align: center;">
+				<a href="/">Home</a>
+				&middot;
+				<a href="https://github.com/Ides-Language/Ides">Project Page</a>
+				&middot;
+				<a href="/about.html">About</a>
+			</div>
+		</div>
+	</body>
+</html>

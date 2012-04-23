@@ -1,0 +1,57 @@
+code {
+	background-color: #E4E4E4;
+	border: 1px solid #BBBBBB;
+	white-space: nowrap;
+}
+
+pre code {
+	border: none;
+	background-color: transparent;
+	white-space: pre;
+}
+
+pre {
+	/*border: 1px solid #BBBBBB;
+	background-color: #E4E4E4;*/
+	margin-left: 2em;
+	margin-right: 2em;
+	padding: 5px;
+	background-color: #E4E4E4;
+	border: 1px solid #BBBBBB;
+	overflow: auto;
+}
+
+.twtr-widget {
+	font-family: serif;
+}
+
+body {
+}
+
+#content {
+	margin-left: 276px;
+	overflow: none;
+}
+
+#logo {
+	padding-right: 10px;
+	margin-bottom: 30px;
+}
+
+#menu {
+	background: #FFFFFF;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	padding: 10px;
+	float: left;
+	height: 100%;
+	border-right: 1px solid #BBBBBB;
+}
+
+#navigation {
+	list-style-type: upper-roman;
+	padding-left: 15px;
+}
+
+
