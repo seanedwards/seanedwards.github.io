@@ -21,8 +21,9 @@ pre {
 	overflow: auto;
 }
 
-.twtr-widget {
+#twitter .twtr-widget {
 	font-family: serif;
+	font-size: 1em;
 }
 
 body {
@@ -47,11 +48,25 @@ body {
 	float: left;
 	height: 100%;
 	border-right: 1px solid #BBBBBB;
+	overflow: auto;
 }
 
 #navigation {
 	list-style-type: upper-roman;
 	padding-left: 15px;
+}
+
+div .post_footer {
+	font-size: 0.8em;
+}
+
+div .post {
+	border: 1px solid #bbbbbb;
+	padding: 5px;
+}
+
+div .post .post_title {
+	margin-top: 0px;
 }
 
 
