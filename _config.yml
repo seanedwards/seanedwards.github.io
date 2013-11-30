@@ -4,5 +4,5 @@ pygments: true
 markdown: kramdown
 
 name: com.tilmonedwards._
-description: Musings and whatever.
+description: 
 url: http://tilmonedwards.com
