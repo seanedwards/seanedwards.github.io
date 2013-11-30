@@ -1,2 +1,7 @@
 safe: true
 paginate: 3
+pygments: true
+
+name: com.tilmonedwards
+description: Musings and whatever.
+url: http://tilmonedwards.com

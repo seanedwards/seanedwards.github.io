@@ -1,0 +1,16 @@
+.fill-parent {
+	height: 2000px;
+	bottom: 0px;
+}
+
+.highlight {
+	background: #222222;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 1.25rem;
+}
+
+byline {
+    font-size: 0.8em;
+    color: #888888;
+}

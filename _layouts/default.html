@@ -1,9 +1,19 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<title>{{page.title}} - Code Et Cetera</title>
-		<link rel="stylesheet" href="/css/style.css" media="screen" />
-		<link rel="stylesheet" href="/css/style.css" media="print" />
-		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/pygments.css">
+		<link rel="stylesheet" href="/css/foundation.min.css" />
+		<link rel="stylesheet" href="/css/site.css" />
+
+		<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="{{site.name}} ATOM feed">
+		
 		<!--
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
@@ -18,51 +28,84 @@
 			})();
 		</script>
 		-->
-	</head>
-	<body>
-		<div id="menu">
-			<div id="twitter">
-			<script>
 
-			new TWTR.Widget({
-					version: 2,
-					type: 'profile',
-					rpp: 4,
-					interval: 30000,
-					width: 245,
-					height: 300,
-					theme: {
-						shell: {
-						background: '#ffffff',
-						color: '#000000'
-					},
-					tweets: {
-						background: '#ffffff',
-						color: '#000000',
-						links: '#0000ff'
-					}
-				},
-				features: {
-					scrollbar: false,
-					loop: false,
-					live: false,
-					behavior: 'all'
-				}
-			}).render().setUser('total_meltdown').start();
-			</script>
+		<script src="/js/vendor/custom.modernizr.js"></script>
+	</head>
+	<body class="antialiased">
+		<!-- Debug info:
+			Page ID: {{page.id}}
+		-->
+		<section role="main">
+		<nav class="breadcrumbs">
+			<a href="/">Home</a>
+			{% if page.id %}
+			{% for crumb in page.breadcrumbs %}
+				{{crumb}}
+			{% endfor %}
+			<a class="current" href="#">{{page.title}}</a>
+			{% endif %}
+		</nav>
+
+
+		<div class="row">
+
+			<div class="small-9 column">
+				{% if page.header %}
+					<h1>{{page.header}}</h1>
+				{% else %}
+					<h1>{{page.title}}</h1>
+				{% endif %}
+
+				{% if page.subtitle %}
+					<h5>{{page.subtitle}}</h5>
+				{% elsif page.id %}
+				{% else %}
+					<h5>{{site.description}}</h5>
+				{% endif %}
+
+				{% if page.byline %}
+					<byline>{{page.byline}}</byline>
+				{% elsif page.id %}
+					<byline>By {{page.author}} on {{page.date | date: "%Y-%m-%d"}}</byline>
+				{% endif %}
+				<hr />
+
+				{{content}}
+
+				{% if page.comments %}
+					<hr />
+				    <div id="disqus_thread"></div>
+				    <script type="text/javascript">
+				        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+				        var disqus_shortname = 'tilmonedwards'; // required: replace example with your forum shortname
+
+				        /* * * DON'T EDIT BELOW THIS LINE * * */
+				        (function() {
+				            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				        })();
+				    </script>
+				    <noscript>Please enable JavaScript to view the comments.</noscript>
+				    
+				{% endif %}
+			</div>
+
+			<div class="small-3 column">
+			<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/tilmonedwards" data-widget-id="406665415922696192">Tweets by @tilmonedwards</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
 			</div>
 		</div>
-		
-		<div id="content">
-			<h1>{{page.title}}</h1>
-			{{content}}
-			<div style="text-align: center;">
-				<a href="/">Home</a>
-				&middot;
-				<a href="https://github.com/seanedwards">Github</a>
-				&middot;
-				<a href="https://bitbucket.org/sean_edwards">BitBucket</a>
-			</div>
-		</div>
+
+		</section>
+
+
+		<script src="/js/vendor/jquery.js"></script>
+		<script src="/js/foundation.min.js"></script>
+		<script>
+    		$(document).foundation();
+		</script>
 	</body>
 </html>
