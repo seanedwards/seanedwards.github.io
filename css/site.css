@@ -8,9 +8,30 @@
 	padding: 10px;
 	border-radius: 10px;
 	margin-bottom: 1.25rem;
+    overflow-x: scroll;
+}
+
+.sidebar {
+    background: #f4f4f4;
+    bottom: 100%;
+}
+
+.side-nav li {
+    /* font-size: 0.77778rem; */
+}
+
+.content {
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 byline {
     font-size: 0.8em;
     color: #888888;
+}
+
+.post-wrapper {
+    padding: 10px;
+    margin-bottom: 1.25rem;
+    border: 1px solid #DDDDDD;
 }

@@ -1,7 +1,8 @@
 safe: true
-paginate: 3
+paginate: 5
 pygments: true
+markdown: kramdown
 
-name: com.tilmonedwards
+name: com.tilmonedwards._
 description: Musings and whatever.
 url: http://tilmonedwards.com
