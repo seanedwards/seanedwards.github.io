@@ -35,3 +35,11 @@ byline {
     margin-bottom: 1.25rem;
     border: 1px solid #DDDDDD;
 }
+
+code {
+    color: #884444;
+}
+
+a code {
+    text-decoration: underline;
+}
