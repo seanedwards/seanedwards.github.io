@@ -5,15 +5,15 @@ layout: none
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>{{ site.name }}</title>
 	<subtitle>{{ site.description }}</subtitle>
-	<link>{{ site.url }}</link>
+	<link href="{{ site.url }}" />
 	<link href="{{ site.url }}{{page.url}}" rel="self" />
-	<id>{{page.url}}</id>
+	<id>{{ site.url }}{{page.url}}</id>
 	<updated>{{site.time | date_to_xmlschema}}</updated>
 
 	{% for post in site.posts limit:10 %}
 	<entry>
 		<title>{{ post.title | xml_escape }}</title>
-		<link>{{ site.url }}{{ post.url }}</link>
+		<link href="{{ site.url }}{{ post.url }}" />
 		<id>{{ post.id }}</id>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<summary>{{ post.content }}</summary>
