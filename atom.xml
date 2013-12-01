@@ -16,7 +16,7 @@ layout: none
 		<link href="{{ site.url }}{{ post.url }}" />
 		<id>{{ site.url }}{{ post.url }}</id>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<content type="text/html" src="{{ site.url }}{{ post.url }}"; />
+		<content type="text/html" src="{{ site.url }}{{ post.url }}" />
 		<author>
 			<name>{{ post.author }}</name>
 		</author>
