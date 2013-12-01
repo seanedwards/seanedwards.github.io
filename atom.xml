@@ -14,9 +14,9 @@ layout: none
 	<entry>
 		<title>{{ post.title | xml_escape }}</title>
 		<link href="{{ site.url }}{{ post.url }}" />
-		<id>{{ post.id }}</id>
+		<id>{{ site.url }}{{ post.url }}</id>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<summary>{{ post.content }}</summary>
+		<content type="text/html" src="{{ site.url }}{{ post.url }}"; />
 		<author>
 			<name>{{ post.author }}</name>
 		</author>
