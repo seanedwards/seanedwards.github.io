@@ -13,13 +13,16 @@ layout: none
 	{% for post in site.posts limit:10 %}
 	<entry>
 		<title>{{ post.title | xml_escape }}</title>
-		<link href="{{ site.url }}{{ post.url }}" />
-		<id>{{ site.url }}{{ post.url }}</id>
+		<link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url }}" />
+		<id>{{ site.url }}{{ post.id }}</id>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<content type="text/html" src="{{ site.url }}{{ post.url }}" />
 		<author>
 			<name>{{ post.author }}</name>
+			<uri>{{site.url}}</uri>
 		</author>
+		<content type="text/html" src="{{ site.url }}{{ post.url }}">
+			{{ post.content | xml_escape }}
+		</content>
 	</entry>
 	{% endfor %}
 </feed>
