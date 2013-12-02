@@ -78,7 +78,14 @@
 					{% if page.byline %}
 						<byline>{{page.byline}}</byline>
 					{% elsif page.id %}
-						<byline>By {{page.author}} on {{page.date | date: "%Y-%m-%d"}}</byline>
+						<byline>
+							By
+							{% if page.author %}
+								{{page.author}}
+							{% else %}
+								{{site.author}}
+							{% endif %} on {{page.date | date: "%Y-%m-%d"}}
+						</byline>
 					{% endif %}
 					<hr />
 

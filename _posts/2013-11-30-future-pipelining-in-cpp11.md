@@ -2,7 +2,6 @@
 layout: default
 title: "Future Pipelining in C++11"
 comments: true
-author: Sean Edwards
 ---
 
 One nice feature of C++11 is [`std::future`](http://www.cplusplus.com/reference/future/future/). Unfortunately, in its current state, [pipelining](http://en.wikipedia.org/wiki/Futures_and_promises#Promise_pipelining) could be more convenient. Here's my idea for a solution, which I haven't used in anger, but seems to work very well.

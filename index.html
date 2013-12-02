@@ -16,7 +16,14 @@ permalink: index.html
 	{% if post.byline %}
 		<byline>{{post.byline}}</byline>
 	{% else %}
-		<byline>By {{post.author}} on {{post.date | date: "%Y-%m-%d"}}</byline>
+		<byline>
+			By
+			{% if post.author %}
+				{{post.author}}
+			{% else %}
+				{{site.author}}
+			{% endif %} on {{post.date | date: "%Y-%m-%d"}}
+		</byline>
 	{% endif %}
 	<hr />
 
