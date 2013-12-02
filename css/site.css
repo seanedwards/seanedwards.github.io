@@ -32,7 +32,7 @@ byline {
 
 .post-wrapper {
     padding: 10px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 4rem;
     border: 1px solid #DDDDDD;
 }
 
@@ -46,8 +46,4 @@ a code {
 
 .sub-nav {
     margin-bottom: 0px;
-}
-
-blockquote p {
-    color: #555555;
 }

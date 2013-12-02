@@ -22,8 +22,6 @@ auto operator<<(std::future<T> fut, const F& func)
 }
 {% endhighlight %}
 
-<!--break-->
-
 I will use these functions in the following examples:
 
 {% highlight cpp %}
