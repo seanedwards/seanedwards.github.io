@@ -43,3 +43,11 @@ code {
 a code {
     text-decoration: underline;
 }
+
+.sub-nav {
+    margin-bottom: 0px;
+}
+
+blockquote p {
+    color: #555555;
+}
