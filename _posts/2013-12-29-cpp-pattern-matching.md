@@ -5,7 +5,7 @@ subtitle: "Or: continuing adventures in template hell"
 comments: true
 ---
 
-After being spoiled by Scala's [pattern matching](http://docs.scala-lang.org/tutorials/tour/pattern-matching.html), I became frustrated by the verbosity required to implement the [visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern) in C++. After some thought, it seemed like the visitor pattern could be abstracted away using templates.
+After being spoiled by Scala's [pattern matching](http://docs.scala-lang.org/tutorials/tour/pattern-matching.html), I became frustrated by the verbosity required to implement the [visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern) in C++. After some thought, it seemed like some common uses of the visitor pattern could be abstracted away using templates.
 
 We start with a function, called `Match`, which begins a match expression:
 
