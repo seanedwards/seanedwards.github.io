@@ -31,6 +31,8 @@ fn main() {
 
 I don't know much about the implementation details of this. I would be satisfied with a separate type of data structure, perhaps `class`, which can only exist in a boxed pointer.
 
+**Update:** It appears such a proposal, in much more detail, [already exists](http://smallcultfollowing.com/babysteps/blog/2013/10/24/single-inheritance/).
+
 Functions and Traits
 ====================
 
