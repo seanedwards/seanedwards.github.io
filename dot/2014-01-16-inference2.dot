@@ -1,0 +1,6 @@
+digraph g {
+    Decl [label="val x : float32"];
+    Val [label="5 (as float32)"];
+
+    Decl -> Val [label="float32"];
+}

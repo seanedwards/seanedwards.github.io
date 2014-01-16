@@ -1,3 +1,6 @@
 digraph g {
-    n;
+    Decl [label="val x"];
+    Val [label="5"];
+
+    Decl -> Val [label="int32" dir=back];
 }

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "C++11 Context Stacks"
+title: "More C++11: Context Stacks"
 comments: true
 ---
 
