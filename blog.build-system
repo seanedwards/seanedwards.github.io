@@ -1,0 +1,5 @@
+{
+    "cmd": ["dot", "-Tpng", "$file", "$file.png"],
+    "file_regex": "^dot[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python"
+}

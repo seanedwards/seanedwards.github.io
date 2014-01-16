@@ -1,0 +1,414 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Multi",
+				"MultiContextItem"
+			],
+			[
+				"Argume",
+				"ArgumentsDescriotion"
+			],
+			[
+				"GetOrCre",
+				"GetOrCreateUserByPHID"
+			],
+			[
+				"GetOr",
+				"GetOrCreateUserByPHID"
+			],
+			[
+				"QA",
+				"QANotOK"
+			],
+			[
+				"twitter",
+				"twitter-button"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_posts/2014-01-16-ides-lambda-coersion.md",
+			"settings":
+			{
+				"buffer_size": 782,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 196,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2013-12-02-internet.md",
+			"settings":
+			{
+				"buffer_size": 3362,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/aaapackagedev/Support/Convert to ....sublime-build",
+	"command_palette":
+	{
+		"height": 367.0,
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"spell",
+				"Google Spell Check"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Packag",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Jek",
+				"Jekyll: New Post"
+			]
+		],
+		"width": 647.0
+	},
+	"console":
+	{
+		"height": 206.0,
+		"history":
+		[
+			"uuid.uuid4()",
+			"import uuid",
+			"uuid.uuid4()",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"pwd"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/edwards/Projects/Ides/etc/editor/sublime3/Ides.sublime-build",
+		"/Users/edwards/test/LazyTree.cpp",
+		"/Users/edwards/Projects/Blog/css/pygments.css",
+		"/Users/edwards/Projects/tinker/cpp/match.cpp",
+		"/Users/edwards/Projects/rust/src/libextra/stack.rs",
+		"/Users/edwards/Projects/IntelliRust/rust/src/libstd/str.rs",
+		"/Users/edwards/Projects/IntelliRust/rust/src/libstd/unicode.rs",
+		"/Users/edwards/Projects/IntelliRust/rust/src/libextra/json.rs",
+		"/Users/edwards/Projects/IntelliRust/rust/src/libstd/char.rs",
+		"/Users/edwards/Projects/o2/src/args/arg.rs",
+		"/Users/edwards/Projects/rust/src/libsyntax/ast_util.rs",
+		"/Users/edwards/Dropbox/Notes/COS 301/Paper02.scala",
+		"/Users/edwards/Downloads/Logs 3/current.txt",
+		"/Users/edwards/Downloads/ZendeskRedmineApp 2/app.js",
+		"/Users/edwards/Downloads/ZendeskRedmineApp 2/manifest.json",
+		"/Users/edwards/Downloads/ZendeskRedmineApp 2/translations/en.json",
+		"/Users/edwards/Projects/Blog/_drafts/internet.md",
+		"/Users/edwards/Projects/Blog/_posts/2013-12-11-top-albums.md",
+		"/Users/edwards/Projects/Blog/_drafts/2013-12-29-top-albums.md",
+		"/Users/edwards/Work/TeamCityScripts/redmine.sh",
+		"/Users/edwards/Downloads/ZendeskRedmineApp/manifest.json",
+		"/Users/edwards/Work/PhabricatorMigration/migrate.py",
+		"/Users/edwards/Work/TeamCityScripts/redmine.py",
+		"/Users/edwards/Work/TeamCityScripts/Redmine.py",
+		"/Users/edwards/Projects/Blog/_layouts/default.html",
+		"/Users/edwards/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/edwards/test/Entrada.dot",
+		"/Users/edwards/Library/Application Support/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/Users/edwards/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/Users/edwards/Library/Application Support/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/Users/edwards/Library/Application Support/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/Users/edwards/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/edwards/Projects/Blog/index.html",
+		"/Users/edwards/Projects/Blog/_posts/2013-11-30-future-pipelining-in-cpp11.md",
+		"/Users/edwards/Projects/Blog/_posts/2013-12-02-internet.md",
+		"/Users/edwards/Projects/Blog/_config.yml",
+		"/Users/edwards/Projects/Blog/atom.xml",
+		"/Users/edwards/Projects/Blog/_posts/2013-12-03-reading-list",
+		"/Users/edwards/Projects/Blog/_drafts/internet",
+		"/Users/edwards/Projects/Blog/rss.xml",
+		"/Users/edwards/Projects/Blog/css/style.css",
+		"/Users/edwards/Projects/Blog/.gitignore",
+		"/Users/edwards/Projects/Blog/_data/blogroll.yml",
+		"/Users/edwards/Projects/Blog/css/site.css",
+		"/Users/edwards/Projects/Blog/_drafts/cpp-format-string",
+		"/Users/edwards/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/edwards/Projects/Blog/rss/feed.xml",
+		"/Users/edwards/Projects/Blog/_drafts/future-pipelining-in-cpp11.md",
+		"/Users/edwards/Projects/Blog/_drafts/test10.md",
+		"/Users/edwards/Projects/Blog/_drafts/test1.md",
+		"/Users/edwards/Projects/Blog/_posts/2013-11-30-future-streams-in-cpp11.md",
+		"/Users/edwards/Projects/Blog/feed.xml",
+		"/Users/edwards/Projects/Blog/js/jquery.js",
+		"/Users/edwards/Projects/Blog/posts/2013-11-30-future-streams-in-c++11.md"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ident",
+			"Block",
+			"SEMI",
+			"with_capacity",
+			"from_elem",
+			"impl Deque",
+			"control paths return a value",
+			"code paths return a value",
+			"is_xid_start",
+			"mod ",
+			"ByteIterator",
+			"Match",
+			"data",
+			"input_trackers",
+			"createRedmine"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_posts/2014-01-16-ides-lambda-coersion.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								439,
+								439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_config.yml",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2013-12-02-internet.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 208.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "blog.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"etc/editor/sublime3/Ides.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 302.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
