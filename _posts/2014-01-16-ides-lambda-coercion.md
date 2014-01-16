@@ -90,7 +90,7 @@ Ides borrows the concept of primary and auxilary constructors from Scala[^2]. In
 
 {% highlight scala %}
 class A(s: String) => {
-    implicit def this(s: String) => new A(s);
+    implicit def this(s: String) => A(s);
 }
 {% endhighlight %}
 
@@ -103,7 +103,7 @@ A class may also implement the trait `CoerceTo[T]` by providing a single method,
 
 {% highlight scala %}
 class B(s: String) : CoerceTo[A] => {
-    def to() : A => new A(s);
+    def to() : A => A(s);
 }
 {% endhighlight %}
 
