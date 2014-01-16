@@ -150,4 +150,4 @@ class Lazy[T : Any](func : Function[T]) : CoerceTo[T] => {
 
 [^2]: [The Scala Language Specification](http://www.scala-lang.org/docu/files/ScalaReference.pdf) &sect; 5.3.1
 
-[^3]: Unlike many other statically typed languages, Ides allows functions to be overloaded by return type, and uses coersion rules to disambiguate between otherwise identical methods. This allows `CoerceTo[T]` to be implemented for multiple types of `T`.
+[^3]: Unlike many other statically typed languages, Ides allows functions to be overloaded by return type, and uses coercion rules to disambiguate between otherwise identical methods. This allows `CoerceTo[T]` to be implemented for multiple types of `T`.
