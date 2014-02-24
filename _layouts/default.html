@@ -41,14 +41,16 @@
 
 	  			<section class="top-bar-section">
 	  				<ul class="left">
+	  					{% for category in site.data.blogroll %}
 		  			    <li class="has-dropdown">
-		    			    <a href="#">Blogroll</a>
+		    			    <a href="#">{{category.title}}</a>
 					        <ul class="dropdown" data-dropdown-content>
-					        	{% for item in site.data.blogroll %}
+					        	{% for item in category.items %}
 									<li><a href="{{item.url}}">{{item.name}}</a></li>
 								{% endfor %}
 					        </ul>
 		    			</li>
+		    			{% endfor %}
 	    			</ul>
 	    			<ul class="right">
 		    			<li style="padding-top: 12px;">

@@ -1,17 +1,38 @@
-- name: Ed Ropple
-  url: http://edcanhack.com/
+- title: "Colleagues & Friends"
+  items:
+    - name: Ed Ropple
+      url: http://swankyrobot.com/blog
 
-- name: Peter Rimkunas
-  url: http://peterimkunas.com/
+    - name: Peter Rimkunas
+      url: http://peterimkunas.com
 
-- name: Alex Karantza
-  url: http://karantza.org/
+    - name: Alex Karantza
+      url: http://karantza.org
 
-- name: Michael O'Church
-  url: http://michaelochurch.wordpress.com/
+    - name: Kyle Hussey
+      url: http://kylehussey.com
 
-- name: Steve Streeting
-  url: http://www.stevestreeting.com/
+- title: "Blogroll"
+  items:
+    - name: Rands in Repose
+      url: http://randsinrepose.com
 
-- name: Kyle Hussey
-  url: http://kylehussey.com/
+    - name: Miguel de Icaza
+      url: http://tirania.org/blog
+
+    - name: Michael O'Church
+      url: http://michaelochurch.wordpress.com
+
+    - name: Steve Streeting
+      url: http://www.stevestreeting.com
+
+- title: "Side Projects"
+  items:
+    - name: The Ides Programming Language
+      url: http://ides-lang.com
+
+    - name: "Capture the Sun"
+      url: http://capturethesunband.com
+
+    - name: GitHub Projects
+      url: https://github.com/seanedwards
