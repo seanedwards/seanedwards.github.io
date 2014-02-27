@@ -36,3 +36,15 @@
 
     - name: GitHub Projects
       url: https://github.com/seanedwards
+
+- title: "Follow Me On..."
+  items:
+    - name: Twitter
+      url: http://twitter.com/tilmonedwards
+
+    - name: GitHub
+      url: http://github.com/seanedwards
+
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/seantedwards
+
