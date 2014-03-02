@@ -22,7 +22,7 @@ layout: nil
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
         <name>{{ post.author }}</name>
-        <uri>{{ site.url }}{{ post.url }}</uri>
+        <uri>{{ site.url }}{{ post.url }}?utm_source={{post.title | uri_escape}}&amp;utm_medium=atom&amp;utm_campaign=Feed</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
