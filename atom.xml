@@ -16,7 +16,7 @@ layout: nil
   {% for post in site.posts %}
   <entry>
     <id>{{ site.url }}{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="{{site.url}}{{ post.url }}"/>
+    <link type="text/html" rel="alternate" href="{{site.url}}{{ post.url }}?utm_source={{post.title | uri_escape}}&amp;utm_medium=atom&amp;utm_campaign=Feed"/>
     <title>{{ post.title }}</title>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
