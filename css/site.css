@@ -40,12 +40,22 @@ code {
     color: #884444;
 }
 
-li a {
-  text-decoration: underline;
+li a { text-decoration: underline; }
+p a { text-decoration: underline; }
+
+h1 a { text-decoration: none; }
+h2 a { text-decoration: none; }
+h3 a { text-decoration: none; }
+h4 a { text-decoration: none; }
+h5 a { text-decoration: none; }
+h6 a { text-decoration: none; }
+
+.main-menu {
+  text-decoration: none;
 }
 
-p a {
-    text-decoration: underline;
+.main-menu-item {
+  text-decoration: none;
 }
 
 .sub-nav {

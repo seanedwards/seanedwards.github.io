@@ -43,10 +43,10 @@
 	  				<ul class="left">
 	  					{% for category in site.data.blogroll %}
 		  			    <li class="has-dropdown">
-		    			    <a href="#">{{category.title}}</a>
+		    			    <a class="main-menu" href="#">{{category.title}}</a>
 					        <ul class="dropdown" data-dropdown-content>
 					        	{% for item in category.items %}
-									<li><a href="{{item.url}}">{{item.name}}</a></li>
+									<li><a class="main-menu-item" href="{{item.url}}">{{item.name}}</a></li>
 								{% endfor %}
 					        </ul>
 		    			</li>
