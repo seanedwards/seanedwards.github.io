@@ -40,7 +40,11 @@ code {
     color: #884444;
 }
 
-a code {
+li a {
+  text-decoration: underline;
+}
+
+p a {
     text-decoration: underline;
 }
 

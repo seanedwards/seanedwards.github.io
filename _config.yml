@@ -1,9 +1,11 @@
 safe: true
 paginate: 5
-pygments: true
+highlighter: pygments
 markdown: kramdown
 
 name: com.tilmonedwards._
 description: "Software Developer, Bassist, Pretty Cool Guy."
 url: http://tilmonedwards.com
 author: Sean Edwards
+
+exclude: dot/*.dot
