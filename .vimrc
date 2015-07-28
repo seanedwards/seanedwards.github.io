@@ -1,2 +1,2 @@
 setlocal spell spelllang=en_us
-autocmd FileType dot autocmd BufWritePre * !bash mkdot.sh ./dot
+autocmd FileType dot autocmd BufWritePre <buffer> !bash mkdot.sh ./dot
