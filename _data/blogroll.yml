@@ -37,6 +37,9 @@
     - name: GitHub Projects
       url: https://github.com/seanedwards
 
+    - name: Cfer
+      url: https://github.com/seanedwards/cfer
+
 - title: "Follow Me On..."
   items:
     - name: Twitter

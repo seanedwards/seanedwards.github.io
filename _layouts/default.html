@@ -33,7 +33,7 @@
 		<!-- Debug info:
 			Page ID: {{page.id}}
 		-->
-		<div>
+		<!--<div>
 			<nav class="top-bar" data-topbar>
 				<ul class="title-area">
 	    			<li class="name"><h1><a href="/">Home</a></h1></li>
@@ -59,54 +59,72 @@
 	    			</ul>
 	    		</section>
 			</nav>
-		</div>
+    </div> -->
 
-		<div class="content">
-			<div class="row">
-				<div class="small-12 column">
-					{% if page.header %}
-						<h1>{{page.header}}</h1>
-					{% else %}
-						<h1>{{page.title}}</h1>
-					{% endif %}
+    <div class="content">
+      <div class="row">
+        <div class="small-12 column">
+          {% if page.header %}
+            <h1>{{page.header}}</h1>
+          {% else %}
+            <h1>{{page.title}}</h1>
+          {% endif %}
 
-					{% if page.subtitle %}
-						<h5>{{page.subtitle}}</h5>
-					{% elsif page.id %}
-					{% else %}
-						<h5>{{site.description}}</h5>
-					{% endif %}
+          {% if page.subtitle %}
+            <h5>{{page.subtitle}}</h5>
+          {% elsif page.id %}
+          {% else %}
+            <h5>{{site.description}}</h5>
+          {% endif %}
 
-					{% if page.byline %}
-						<byline>{{page.byline}}</byline>
-					{% elsif page.id %}
-						<byline>
-							By
-							{% if page.author %}
-								{{page.author}}
-							{% else %}
-								{{site.author}}
-							{% endif %} on {{page.date | date: "%Y-%m-%d"}}
-						</byline>
-					{% endif %}
-					<hr />
+          {% if page.byline %}
+            <byline>{{page.byline}}</byline>
+          {% elsif page.id %}
+            <byline>
+              By
+              {% if page.author %}
+                {{page.author}}
+              {% else %}
+                {{site.author}}
+              {% endif %} on {{page.date | date: "%Y-%m-%d"}}
+            </byline>
+          {% endif %}
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-9 medium-8 columns">
+          {{content}}
 
-					{{content}}
+          {% if page.comments %}
+            <hr />
+              <div id="disqus_thread"></div>
 
-					{% if page.comments %}
-						<hr />
-					    <div id="disqus_thread"></div>
+              <noscript>Please enable JavaScript to view the comments.</noscript>
+              
+          {% endif %}
+        </div>
 
-					    <noscript>Please enable JavaScript to view the comments.</noscript>
-					    
-					{% endif %}
-				</div>
-			</div>
+        {% if page.nav or true %}
+        <div class="sidebar large-3 medium-4 columns">
 
-			<div class="row footer">
+          {% for category in site.data.blogroll %}
+            <h3>{{category.title}}</h3>
+            <ul class="side-nav">
+              {% for item in category.items %}
+                <li><a href="{{item.url}}">{{item.name}}</a></li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
+        </div>
+        {% endif %}
 
-			</div>
-		</div>
+      </div>
+
+      <div class="row footer">
+
+      </div>
+    </div>
 
 
 		<script src="/js/vendor/jquery.js"></script>
