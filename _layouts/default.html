@@ -33,33 +33,6 @@
 		<!-- Debug info:
 			Page ID: {{page.id}}
 		-->
-		<!--<div>
-			<nav class="top-bar" data-topbar>
-				<ul class="title-area">
-	    			<li class="name"><h1><a href="/">Home</a></h1></li>
-	  			</ul>
-
-	  			<section class="top-bar-section">
-	  				<ul class="left">
-	  					{% for category in site.data.blogroll %}
-		  			    <li class="has-dropdown">
-		    			    <a class="main-menu" href="#">{{category.title}}</a>
-					        <ul class="dropdown" data-dropdown-content>
-					        	{% for item in category.items %}
-									<li><a class="main-menu-item" href="{{item.url}}">{{item.name}}</a></li>
-								{% endfor %}
-					        </ul>
-		    			</li>
-		    			{% endfor %}
-	    			</ul>
-	    			<ul class="right">
-		    			<li style="padding-top: 12px;">
-		    				
-		    			</li>
-	    			</ul>
-	    		</section>
-			</nav>
-    </div> -->
 
     <div class="content">
       <div class="row">
@@ -109,10 +82,10 @@
         <div class="sidebar large-3 medium-4 columns">
 
           {% for category in site.data.blogroll %}
-            <h3>{{category.title}}</h3>
+            <h3>{{category.title | xml_escape}}</h3>
             <ul class="side-nav">
               {% for item in category.items %}
-                <li><a href="{{item.url}}">{{item.name}}</a></li>
+                <li><a href="{{item.url}}">{{item.name | xml_escape}}</a></li>
               {% endfor %}
             </ul>
           {% endfor %}
