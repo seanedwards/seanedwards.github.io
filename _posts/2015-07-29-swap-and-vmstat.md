@@ -13,7 +13,7 @@ Having memory pages in swap isn't necessarily bad. Sure, they'll take longer to 
 
 What you might want to look out for, however, is swap thrashing. That happens when, for one reason or another, the kernel keeps sending memory to swap to and from swap. I would expect this to happen most often when the system doesn't have quite enough physical RAM for the workload, but I'm sure there are plenty of other ways to induce that behavior.
 
-You can use `vmstat` to monitor swap activity. As always, consult your local man pages for detailed usage. My favorite incantation is:
+You can use `vmstat` to monitor swap activity, among other useful things. As always, consult your local man pages for detailed usage. My favorite incantation is:
 {% highlight bash %}
 vmstat \ # Probably already installed on your system
   -w \   # Make the columns wider, to accomidate lots of digits of RAM.
