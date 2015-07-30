@@ -3,11 +3,14 @@
     - name: Ed Ropple
       url: http://edcanhack.com
 
+    - name: Matt Juszczak
+      url: http://www.atopia.net
+
     - name: Peter Rimkunas
       url: http://peterimkunas.com
 
-    - name: Alex Karantza
-      url: http://karantza.org
+    #- name: Alex Karantza
+    #  url: http://karantza.org
 
     - name: James Hadley
       url: http://jamesahadley.com
