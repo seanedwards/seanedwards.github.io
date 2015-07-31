@@ -69,7 +69,7 @@
           {% endif %}
 
           {% if page.no_share != true %}
-          <!-- <div class="share-button small-centered" style="float: right; height: 22px;"></div> -->
+            <div class="share-button small-centered" style="float: right; height: 22px;"></div>
           {% endif %}
 
           <hr />
@@ -132,10 +132,9 @@
                 description: "\"{{page.title}}\" by {{site.data.contact.twitter}}"
               },
               facebook: {
-                url: "{{site.url}}{{page.url}}?utm_source=facebook&utm_medium=sharebtn&utm_campaign=organic",
-                caption: "{{page_desc}}",
-                description: "",
-                load_sdk: false
+                url: "{{site.url}}{{page.url}}?utm_source=facebook%26utm_medium=sharebtn%26utm_campaign=organic",
+                caption: "{{page.title}}",
+                load_sdk: true
               },
               google_plus: {
                 enabled: false
