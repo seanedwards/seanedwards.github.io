@@ -31,17 +31,14 @@
 
 - title: "Side Projects"
   items:
-    - name: The Ides Programming Language
-      url: http://ides-lang.com
-
     - name: "Capture the Sun"
       url: http://capturethesunband.com
 
-    - name: GitHub Projects
-      url: https://github.com/seanedwards
-
     - name: Cfer
       url: https://github.com/seanedwards/cfer
+
+    - name: The Ides Programming Language
+      url: http://ides-lang.com
 
 - title: "Follow Me On..."
   items:
