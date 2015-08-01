@@ -31,16 +31,17 @@
 }
 
 .sharing {
-  margin-top: 15px;
-  margin-bottom: 15px;
-
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-align:center;
 }
 
-.sharing div {
-  float: left;
+.sharing .sharing-network {
+  display: inline;
   margin: 10px;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .sharing .facebook {
