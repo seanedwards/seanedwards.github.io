@@ -47,15 +47,15 @@
     <div class="content">
       <div class="row">
         <div class="small-12 column">
-          {% if page.subtitle %}
-            {% assign page_desc = page.subtitle %}
-          {% elsif page.id %}
-          {% else %}
-            {% assign page_desc = site.description %}
-          {% endif %}
+          <h1><a href="/">{{site.name}}</a></h1>
+          <h5>{{site.description}}</h5>
 
-          <h1>{{page.title}}</h1>
-          <h5>{{page_desc}}</h5>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-9 medium-8 columns">
+          {% if page.id %}<h2>{{page.title}}</h2>{% endif %}
 
           <div class="byline">
           {% if page.byline %}
@@ -71,29 +71,9 @@
             </byline>
           {% endif %}
           </div>
-
-          <div class="sharing">
-          {% if page.no_share != true %}
-            <div class="facebook fb-like" data-href="{{site.url}}{{page.url}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-            <div class="twitter">
-              <a href="https://twitter.com/share" class="twitter-share-button" data-via="tilmonedwards" data-text="{{page.title}}"></a>
-            </div>
-            <div class="linkedin">
-              <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-              <script type="IN/Share" data-url="{{site.url}}{{page.url}}" data-counter="right"></script>
-            </div>
-            <div class="hn">
-              <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}" data-count="horizontal">Vote on Hacker News</a>
-            </div>
-
-          {% endif %}
+          <div>
+            {{content}}
           </div>
-          <hr />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-9 medium-8 columns">
-          {{content}}
 
           {% if page.comments %}
             <hr />
@@ -103,6 +83,21 @@
               
           {% endif %}
         </div>
+
+
+        {% if page.no_share != true %}
+          <div class="sidebar large-3 medium-4 columns sharing">
+            <h3>Share This Post</h3>
+            <div class="facebook fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="box_count" data-action="like" data-show-faces="false" data-share="true"></div>
+            <div class="twitter">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-via="tilmonedwards" data-text="{{page.title}}" data-count="vertical"></a>
+            </div>
+            <div class="hn">
+              <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}" data-count="vertical">Vote on Hacker News</a>
+            </div>
+
+          </div>
+        {% endif %}
 
         {% if page.no_nav != true %}
         <div class="sidebar large-3 medium-4 columns">
