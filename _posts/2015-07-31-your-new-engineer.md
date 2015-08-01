@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Your New Engineer is Working Too Many Hours"
+comments: true
 ---
 
 Here's a scenario: You're an engineering manager, and you've just hired a new junior developer or three, fresh out of college.
