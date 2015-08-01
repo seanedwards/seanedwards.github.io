@@ -26,6 +26,26 @@
     padding-bottom: 50px;
 }
 
+.byline {
+  margin-bottom: 5px;
+}
+
+.sharing {
+  margin-top: 2px;
+  height: 20px;
+}
+
+.sharing div {
+  float: left;
+  margin-right: 5px;
+}
+
+.sharing .facebook {
+}
+
+.sharing .twitter {
+}
+
 byline {
     font-size: 0.8em;
     color: #888888;
@@ -35,6 +55,11 @@ byline {
     padding: 10px;
     margin-bottom: 4rem;
     border: 1px solid #DDDDDD;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 code {

@@ -4,12 +4,15 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="{{site.name}}"/>
+    <meta property="og:title" content="{{page.title}}"/>
+    <meta property="og:locale" content="en_us" />
+    <meta property="og:url" content="{{site.url}}{{page.url}}"/>
 
-    <meta name="og:title" content="{{page.title}}">
-    <meta name="twitter:title" content="{{page.title}} by @tilmonedwards">
+    <meta property="twitter:title" content="{{page.title}} by @tilmonedwards"/>
 
     {% if page.subtitle %}
-      <meta name="og:description" content="{{page.subtitle}}">
+      <meta name="og:description" content="{{page.subtitle}}"/>
     {% endif %}
 
     <title>{% if page.header %}{{page.header}}{% else %}{{page.title}}{% endif %} - {{site.name}}</title>
@@ -47,7 +50,6 @@
           {% if page.subtitle %}
             {% assign page_desc = page.subtitle %}
           {% elsif page.id %}
-            {% assign page_desc = '' %}
           {% else %}
             {% assign page_desc = site.description %}
           {% endif %}
@@ -55,6 +57,7 @@
           <h1>{{page.title}}</h1>
           <h5>{{page_desc}}</h5>
 
+          <div class="byline">
           {% if page.byline %}
             <byline>{{page.byline}}</byline>
           {% elsif page.id %}
@@ -67,11 +70,18 @@
               {% endif %} on {{page.date | date: "%Y-%m-%d"}}
             </byline>
           {% endif %}
+          </div>
 
+          <div class="sharing">
           {% if page.no_share != true %}
-            <div class="share-button small-centered" style="float: right; height: 22px;"></div>
+            <div class="facebook">
+              <div class="fb-like" data-href="{{site.url}}{{page.url}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+            </div>
+            <div class="twitter">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-via="tilmonedwards" data-text="{{page.title}}"></a>
+            </div>
           {% endif %}
-
+          </div>
           <hr />
         </div>
       </div>
@@ -112,39 +122,17 @@
 
 		<script src="/js/vendor/jquery.js"></script>
 		<script src="/js/foundation.min.js"></script>
-		<script src="/js/share.min.js"></script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=154953868663";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 		<script>
     		$(document).foundation();
-
-
-        $(document).ready(function() {
-          new Share(".share-button", {
-            title: "{{page.title}}",
-            description: "{{page_desc}}",
-            url: "{{site.url}}{{page.url}}?utm_source=sharebtn&utm_medium=sharebtn&utm_campaign=organic",
-            ui: {
-              flyout: 'left middle',
-              button_font: false
-            },
-            networks: {
-              twitter: {
-                url: "{{site.url}}{{page.url}}?utm_source=twitter%26utm_medium=sharebtn%26utm_campaign=organic",
-                description: "\"{{page.title}}\" by {{site.data.contact.twitter}}"
-              },
-              facebook: {
-                url: "{{site.url}}{{page.url}}?utm_source=facebook%26utm_medium=sharebtn%26utm_campaign=organic",
-                caption: "{{page.title}}",
-                load_sdk: true
-              },
-              google_plus: {
-                enabled: false
-              },
-              pinterest: {
-                enabled: false
-              }
-            }
-          });
-        })
 		</script>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		<script type="text/javascript">
