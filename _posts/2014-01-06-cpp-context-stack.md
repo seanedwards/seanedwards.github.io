@@ -1,7 +1,5 @@
 ---
-layout: default
 title: "More C++11: Context Stacks"
-comments: true
 ---
 
 In today's post, more evil with C++ templates.

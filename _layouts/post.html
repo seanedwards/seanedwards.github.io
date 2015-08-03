@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% if page.id %}<h2>{{page.title}}</h2>{% endif %}
+
+<div class="byline">
+{% if page.byline %}
+  <byline>{{page.byline}}</byline>
+{% elsif page.id %}
+  <byline>
+    By
+    {% if page.author %}
+      {{page.author}}
+    {% else %}
+      {{site.author}}
+    {% endif %} on {{page.date | date: "%Y-%m-%d"}}
+  </byline>
+{% endif %}
+</div>
+<div>
+  {{content}}
+</div>
+
+{% if page.comments %}
+  <hr />
+    <div id="disqus_thread"></div>
+
+    <noscript>Please enable JavaScript to view the comments.</noscript>
+    
+{% endif %}

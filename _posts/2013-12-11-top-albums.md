@@ -1,7 +1,5 @@
 ---
-layout: default
 title: Favorite Albums of 2013
-comments: true
 ---
 
 **Warning**: This post contains highly subjective content, which may not be appropriate for all audiences. All albums are picked, without measurable criteria, by rigorous application of gut instinct. Reader discretion is advised.

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Your New Engineer is Working Too Many Hours"
 ---
 

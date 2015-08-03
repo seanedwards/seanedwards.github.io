@@ -1,12 +1,11 @@
 ---
-layout: default
 title: "The Ides Language: Lambas and Coercion Rules"
-comments: true
 ---
 
 The Ides programming language, for the uninitiated, is my own attempt at designing a modern, multiparidigm systems programming language. It is heavily inspired by [Scala](http://www.scala-lang.org/) and [Rust](http://www.rust-lang.org/), and is built on [LLVM](http://llvm.org/). This post is a brief overview of some aspects of the language's coercion rules as they apply to lambda expressions.
 
 These ideas are works in progress, and feedback is welcome.
+
 
 Inference and Coercion
 ======================

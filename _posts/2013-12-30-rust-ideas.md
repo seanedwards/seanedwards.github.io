@@ -1,7 +1,5 @@
 ---
-layout: default
 title: "My Rusty Wishlist"
-comments: true
 ---
 
 I've been spending some time with Rust lately, and I thought I'd write down some ideas of what I would like to see, listed roughly in the order that I would like to see them.

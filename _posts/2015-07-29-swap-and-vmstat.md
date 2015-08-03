@@ -1,8 +1,6 @@
 ---
-layout: default
 title: "Why am I using swap space when I have plenty of RAM?"
 subtitle: "And what the heck is 'swappiness' anyway?"
-comments: true
 ---
 
 Most savvy computer users are at least vaguely familiar with the concept of swap space, or the Windows page file. Here's some disorganized, high-level information on Linux swap space.
