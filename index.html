@@ -10,66 +10,66 @@ layout: default
 {% endif %}
 
 <div class="post-wrapper">
-	<h2 class="post_title">
-		<a href="{{post.url}}">{{ post.title }}</a>
-	</h2>
+  <h2 class="post_title">
+    <a href="{{post.url}}">{{ post.title }}</a>
+  </h2>
 
-	{% if post.subtitle %}
-		<h5>{{post.subtitle}}</h5>
-	{% endif %}
+  {% if post.subtitle %}
+    <h5>{{post.subtitle}}</h5>
+  {% endif %}
 
-	{% if post.byline %}
-		<byline>{{post.byline}}</byline>
-	{% else %}
-		<byline>
-			By
-			{% if post.author %}
-				{{post.author}}
-			{% else %}
-				{{site.author}}
-			{% endif %} on {{post.date | date: "%Y-%m-%d"}}
-		</byline>
-	{% endif %}
-	<hr />
+  {% if post.byline %}
+    <byline>{{post.byline}}</byline>
+  {% else %}
+    <byline>
+      By
+      {% if post.author %}
+        {{post.author}}
+      {% else %}
+        {{site.author}}
+      {% endif %} on {{post.date | date: "%Y-%m-%d"}}
+    </byline>
+  {% endif %}
+  <hr />
 
-	{{ post.content | split:'<!--break-->' | first }}
-	{% if post.content contains '<!--break-->' %}
+  {{ post.content | split:'<!--break-->' | first }}
+  {% if post.content contains '<!--break-->' %}
 
-		<a href="{{ post.url }}">Read More &raquo;</a>
-	{% endif %}
+    <a href="{{ post.url }}">Read More &raquo;</a>
+  {% endif %}
 </div>
 
 {% endfor %}
 
 {% if paginator.page <= 5 %}
-	{% assign page_start = 1 %}
+  {% assign page_start = 1 %}
 {% else %}
-	{% assign page_start = paginator.page | minus:5 %}
+  {% assign page_start = paginator.page | minus:5 %}
 {% endif %}
 
 <div class="pagination-centered">
-	<ul class="pagination">
-		{% if paginator.previous_page %}
-		<li class="arrow"><a href="/page{{paginator.previous_page}}">&laquo;</a></li>
-		{% else %}
-		<li class="arrow unavailable"><a href="">&laquo;</a></li>
-		{% endif %}
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+    <li class="arrow"><a href="/page{{paginator.previous_page}}">&laquo;</a></li>
+    {% else %}
+    <li class="arrow unavailable"><a href="">&laquo;</a></li>
+    {% endif %}
 
-		{% for page in (page_start..paginator.total_pages) limit:11 %}
-			{% if page == paginator.page %}
-		    	<li class="current unavailable"><a href="">{{ page }}</a></li>
-		    {% elsif page == 1 %}
-		    	<li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
-		    {% else %}
-		    	<li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-		    {% endif %}
-		{% endfor %}
+    {% for page in (page_start..paginator.total_pages) limit:11 %}
+      {% if page == paginator.page %}
+        <li class="current unavailable"><a href="">{{ page }}</a></li>
+      {% elsif page == 1 %}
+        <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+      {% else %}
+        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+      {% endif %}
+    {% endfor %}
 
-		{% if paginator.next_page %}
-		<li class="arrow"><a href="/page{{paginator.next_page}}" class="next">&raquo;</a></li>
-		{% else %}
-		<li class="arrow unavailable"><a href="">&raquo;</a></li>
-		{% endif %}
-	</ul>
+    {% if paginator.next_page %}
+    <li class="arrow"><a href="/page{{paginator.next_page}}" class="next">&raquo;</a></li>
+    {% else %}
+    <li class="arrow unavailable"><a href="">&raquo;</a></li>
+    {% endif %}
+  </ul>
 </div>
 
