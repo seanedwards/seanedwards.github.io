@@ -17,7 +17,7 @@ defaults:
     values:
       layout: default
       nav: true
-      ads: true
+      ads: false
 
   - scope:
       path: ""
