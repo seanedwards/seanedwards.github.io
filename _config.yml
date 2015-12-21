@@ -17,6 +17,7 @@ defaults:
     values:
       layout: default
       nav: true
+      ads: true
 
   - scope:
       path: ""
@@ -32,3 +33,4 @@ defaults:
     values:
       layout: post
       comments: false
+      #ads: false

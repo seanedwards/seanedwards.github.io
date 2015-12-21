@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-jekyll serve --drafts --watch --future
+bundle exec jekyll serve --drafts --watch --future
