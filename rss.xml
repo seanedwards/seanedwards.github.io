@@ -9,8 +9,8 @@ layout: nil
     <title>{{ site.name }}</title>
     <description>This is an example of an RSS feed</description>
     <link>{{ site.url }}</link>
-    <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
-    <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <ttl>1800</ttl>
 
     {% for post in site.posts %}
@@ -19,7 +19,7 @@ layout: nil
       <description>{{ post.content | xml_escape }}</description>
       <link>{{ site.url }}{{ post.id }}?utm_source={{post.title | uri_escape}}&amp;utm_medium=atom&amp;utm_campaign=Feed</link>
       <guid isPermaLink="true">{{ site.url }}{{ post.id }}</guid>
-      <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
     </item>
   {% endfor %}
 
