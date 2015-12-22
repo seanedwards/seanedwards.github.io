@@ -16,7 +16,7 @@ Type inference and type coercion can be thought of as opposite operations. With 
 val x = 5;
 {% endhighlight %}
 
-<img src="/dot/2014-01-16-inference1.dot.png" />
+<img src="{{ site.url }}/dot/2014-01-16-inference1.dot.png" />
 
 Conversely, with type coercion, types are implicitly forced *downward* through the expression tree:
 
@@ -24,7 +24,7 @@ Conversely, with type coercion, types are implicitly forced *downward* through t
 val x : float32 = 5;
 {% endhighlight %}
 
-<img src="/dot/2014-01-16-inference2.dot.png" />
+<img src="{{ site.url }}/dot/2014-01-16-inference2.dot.png" />
 
 Both of these are used extensively in idiomatic Ides code.
 
