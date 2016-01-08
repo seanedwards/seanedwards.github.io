@@ -4,9 +4,9 @@ highlighter: pygments
 markdown: kramdown
 
 name: com.tilmonedwards._
-description: "Software Developer, Bassist, Pretty Cool Guy."
+description: "Bassist &middot; Improviser &middot; Computer Wrangler"
 url: http://tilmonedwards.com
-author: Sean Edwards
+author: S. Tilmon Edwards
 
 exclude:
   - dot/*.dot
