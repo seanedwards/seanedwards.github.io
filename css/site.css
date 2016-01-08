@@ -81,6 +81,12 @@ h4 a { text-decoration: none; }
 h5 a { text-decoration: none; }
 h6 a { text-decoration: none; }
 
+img.boom-headshot {
+  float: left;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 .main-menu {
   text-decoration: none;
 }
